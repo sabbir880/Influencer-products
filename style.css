@@ -282,12 +282,20 @@ footer{
 /* media quary */
 
 @media (max-width:920px) {
+        body{
+            overflow-x: hidden;
+        }
+        .contianer{
+            width: 900px;
+            margin: 0;
+        }
     .products-colluction{
        display: flex;
        flex-direction: column;
-       width: 1200px;
+       width:960px;
        justify-content: center;
        margin: 0px;
+
     }
     .products{
         display: grid;
@@ -303,7 +311,8 @@ footer{
         margin: 0px;
     }
     footer{
-        width: 1258px; margin: 0px;
+        width: 960px; 
+        margin: 0px;
       
     }
 }
@@ -311,11 +320,13 @@ footer{
     
 }
 @media (max-width:520px) {
+    body{
+        overflow-x: hidden;
+    }
     .banner{
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 0px;
     }
     .banner-left .primary-buttion{
       align-items: center;
