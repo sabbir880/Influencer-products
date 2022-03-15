@@ -110,11 +110,15 @@ hr{
     width: 329px;
     height: 470px;
     padding: 5px;
-    margin: 0 10px;
+    margin: 5px 10px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     border: none;
+    transition:transform 0.4s ;
+}
+.product:hover{
+    transform: scale(1.1);
 }
 .products-ditles{
     margin-left: 10px;
@@ -282,19 +286,20 @@ footer{
 /* media quary */
 
 @media (max-width:920px) {
-        body{
-            overflow-x: hidden;
-        }
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
         .contianer{
             width: 900px;
-            margin: 0;
+        
         }
     .products-colluction{
        display: flex;
        flex-direction: column;
        width:960px;
        justify-content: center;
-       margin: 0px;
+  
 
     }
     .products{
@@ -302,17 +307,17 @@ footer{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         justify-content: center;
-        margin: 0px;
+     
     }
     .gallery{
         display: flex;
         justify-content: center;
         gap: 15px;
-        margin: 0px;
+       
     }
     footer{
         width: 960px; 
-        margin: 0px;
+     
       
     }
 }
@@ -322,6 +327,7 @@ footer{
 @media (max-width:520px) {
     body{
         overflow-x: hidden;
+        max-width: 100%;
     }
     .banner{
         display: flex;
@@ -343,13 +349,13 @@ footer{
         padding: 10px 20px;
         border-radius: 100px;
         align-items: center;
-        margin: 0px;
+    
     }
     .logos{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
       justify-content: center;
-      margin: 0px;
+      
       
     }
     .logos hr{
@@ -364,15 +370,13 @@ footer{
     }
     .more-button{
         font-size: 40px;
-        margin: 0px;
     }
     .gallery{
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       margin: 0px;
+       
     }
 }
 
-/* margin */
